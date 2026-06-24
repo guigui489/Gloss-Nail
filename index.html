@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gloss Nail — Nail Art Studio</title>
+  <meta name="description" content="Gloss Nail, salon spécialisé dans les ongles : gel, semi-permanent, french, babyboomer, chrome nails et nail art." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain"></div>
+
+  <header class="topbar" id="topbar">
+    <a href="#" class="brand">
+      <span>Gloss</span>
+      <strong>Nail</strong>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#stories">Styles</a>
+      <a href="#avant-apres">Avant / Après</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#prestations">Tarifs</a>
+      <a href="#reservation">Réserver</a>
+    </nav>
+
+    <a href="#reservation" class="nav-btn">Réserver</a>
+    <button class="menu-btn" id="menuBtn">menu</button>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="#stories">Styles</a>
+    <a href="#avant-apres">Avant / Après</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#prestations">Tarifs</a>
+    <a href="#reservation">Réserver</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Nail Art Studio</p>
+        <h1>Des ongles qui attirent tous les regards.</h1>
+        <p>
+          Gel, semi-permanent, french, nail art et poses tendances dans une ambiance douce,
+          moderne et pensée pour les clientes qui aiment les beaux détails.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#reservation">Réserver maintenant</a>
+          <a class="btn secondary" href="#galerie">Voir les inspirations</a>
+        </div>
+
+        <div class="social-proof">
+          <span>★★★★★ 4,9/5</span>
+          <span>+120 clientes</span>
+          <span>Réservation WhatsApp</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="main-photo">
+          <img src="./images/french-rouge.jpg" alt="Pose french rouge moderne" />
+          <div class="photo-tag">French rouge</div>
+        </div>
+
+        <div class="mini-photo mini-one">
+          <img src="./images/coeurs-rouges.jpg" alt="Ongles blancs avec petits coeurs rouges" />
+          <span>cœurs rouges</span>
+        </div>
+
+        <div class="mini-photo mini-two">
+          <img src="./images/vert-nail-art.jpg" alt="Ongles verts avec nail art végétal" />
+          <span>green mood</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="stories" class="stories-section">
+      <div class="story-track">
+        <button data-filter="all" class="story active">
+          <img src="./images/french-rouge.jpg" alt="French rouge" />
+          <span>French</span>
+        </button>
+        <button data-filter="coeurs" class="story">
+          <img src="./images/coeurs-rouges.jpg" alt="Cœurs rouges" />
+          <span>Cœurs</span>
+        </button>
+        <button data-filter="vert" class="story">
+          <img src="./images/vert-nail-art.jpg" alt="Nail art vert" />
+          <span>Green</span>
+        </button>
+        <button data-filter="bijoux" class="story">
+          <img src="./images/bijoux-rose.jpg" alt="Ongles bijoux roses" />
+          <span>Bijoux</span>
+        </button>
+        <button data-filter="paillete" class="story">
+          <img src="./images/paillete-marron.jpg" alt="Ongles pailletés marron" />
+          <span>Paillettes</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="avant-apres" class="before-after section">
+      <div class="section-title center reveal">
+        <p class="eyebrow">Avant / Après</p>
+        <h2>De naturel à wow.</h2>
+        <p>Glisse la barre pour comparer des ongles naturels avec une pose terminée.</p>
+      </div>
+
+      <div class="compare reveal" id="compare">
+        <img class="compare-img after" src="./images/french-rouge.jpg" alt="Après pose french rouge" />
+        <div class="before-wrap" id="beforeWrap">
+          <img class="compare-img before" src="./images/avant-naturel.png" alt="Avant ongles naturels" />
+        </div>
+
+        <div class="compare-line" id="compareLine">
+          <span>↔</span>
+        </div>
+
+        <span class="label label-before">Avant</span>
+        <span class="label label-after">Après</span>
+        <input type="range" id="compareRange" min="0" max="100" value="50" aria-label="Comparer avant après" />
+      </div>
+    </section>
+
+    <section id="galerie" class="gallery-section section">
+      <div class="section-title reveal">
+        <p class="eyebrow">Galerie inspiration</p>
+        <h2>Un feed comme Instagram, mais directement sur le site.</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-card tall reveal" data-style="french">
+          <img src="./images/french-rouge.jpg" alt="French rouge moderne" />
+          <div><h3>French rouge</h3><p>Élégant, visible, parfait pour sortir.</p></div>
+        </article>
+
+        <article class="gallery-card reveal" data-style="coeurs">
+          <img src="./images/coeurs-rouges.jpg" alt="Ongles blancs avec cœurs rouges" />
+          <div><h3>Mini cœurs</h3><p>Un détail cute et tendance.</p></div>
+        </article>
+
+        <article class="gallery-card wide reveal" data-style="vert">
+          <img src="./images/vert-nail-art.jpg" alt="Ongles verts avec feuilles" />
+          <div><h3>Green nail art</h3><p>Couleur profonde et motif végétal.</p></div>
+        </article>
+
+        <article class="gallery-card reveal" data-style="bijoux">
+          <img src="./images/bijoux-rose.jpg" alt="Ongles roses avec bijoux et strass" />
+          <div><h3>Bijoux nails</h3><p>Effet événementiel et très glossy.</p></div>
+        </article>
+
+        <article class="gallery-card reveal" data-style="paillete">
+          <img src="./images/paillete-marron.jpg" alt="Ongles marron pailletés" />
+          <div><h3>Paillettes brunes</h3><p>Chic, chaud, parfait automne/hiver.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="prestations" class="prices-section section">
+      <div class="section-title center reveal">
+        <p class="eyebrow">Prestations</p>
+        <h2>Choisis ta pose, envoie ton inspi.</h2>
+      </div>
+
+      <div class="price-tabs reveal">
+        <button class="active" data-cat="all">Tout</button>
+        <button data-cat="gel">Gel</button>
+        <button data-cat="semi">Semi-permanent</button>
+        <button data-cat="art">Nail art</button>
+        <button data-cat="depose">Dépose</button>
+      </div>
+
+      <div class="price-list">
+        <article data-cat="gel" class="price-card reveal">
+          <span>01</span>
+          <div>
+            <h3>Pose gel complète</h3>
+            <p>Extension ou gainage, forme au choix, finition brillante.</p>
+          </div>
+          <strong>55€</strong>
+        </article>
+
+        <article data-cat="semi" class="price-card reveal">
+          <span>02</span>
+          <div>
+            <h3>Semi-permanent</h3>
+            <p>Couleur au choix, pose propre et tenue longue durée.</p>
+          </div>
+          <strong>30€</strong>
+        </article>
+
+        <article data-cat="art" class="price-card reveal">
+          <span>03</span>
+          <div>
+            <h3>Nail art</h3>
+            <p>Cœurs, motifs, strass, paillettes, chrome ou détails personnalisés.</p>
+          </div>
+          <strong>+5€</strong>
+        </article>
+
+        <article data-cat="gel" class="price-card reveal">
+          <span>04</span>
+          <div>
+            <h3>Remplissage</h3>
+            <p>Entretien de la pose après repousse.</p>
+          </div>
+          <strong>40€</strong>
+        </article>
+
+        <article data-cat="depose" class="price-card reveal">
+          <span>05</span>
+          <div>
+            <h3>Dépose douce</h3>
+            <p>Retrait propre avec soin des ongles naturels.</p>
+          </div>
+          <strong>15€</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="transformation section">
+      <div class="section-title reveal">
+        <p class="eyebrow">Transformations</p>
+        <h2>Avant naturel, après ta pose préférée.</h2>
+      </div>
+
+      <div class="duo-grid">
+        <article class="duo-card reveal">
+          <img src="./images/avant-naturel.png" alt="Avant ongles naturels" />
+          <span>Avant</span>
+          <h3>Ongles naturels</h3>
+        </article>
+        <article class="duo-card after reveal">
+          <img src="./images/coeurs-rouges.jpg" alt="Après pose cœurs rouges" />
+          <span>Après</span>
+          <h3>Pose cœurs rouges</h3>
+        </article>
+        <article class="duo-card reveal">
+          <img src="./images/avant-naturel.png" alt="Avant ongles naturels" />
+          <span>Avant</span>
+          <h3>Base simple</h3>
+        </article>
+        <article class="duo-card after reveal">
+          <img src="./images/vert-nail-art.jpg" alt="Après pose nail art vert" />
+          <span>Après</span>
+          <h3>Nail art vert</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="reservation" class="booking-section section">
+      <div class="booking-card reveal">
+        <p class="eyebrow">Réservation</p>
+        <h2>3 étapes, zéro prise de tête.</h2>
+
+        <div class="steps">
+          <div><strong>①</strong><p>Choisis ta prestation</p></div>
+          <div><strong>②</strong><p>Envoie ton inspiration</p></div>
+          <div><strong>③</strong><p>Viens te faire chouchouter</p></div>
+        </div>
+
+        <a class="btn primary" href="https://wa.me/33600000000">Réserver sur WhatsApp</a>
+      </div>
+
+      <aside class="hours-card reveal">
+        <h3>Horaires</h3>
+        <p>Lundi - Vendredi<br><strong>9h00 - 19h00</strong></p>
+        <p>Samedi<br><strong>9h00 - 17h00</strong></p>
+        <p class="small">12 rue des Roses, Toulouse</p>
+
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Planity</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Gloss Nail</strong>
+    <span>Nail Art Studio — site vitrine moderne</span>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/33600000000">💬 Réserver</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
